@@ -1,0 +1,266 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ffb900;
+    --secondary-color: #171100;
+    --heading-font: "Sen", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+/* ====== Common ====== */
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    min-width: 118px;
+    padding: 0 24px;
+    border-radius: 999px;
+    background: #171100;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn.btn-primary {
+    background-color: var(--primary-color);
+}
+
+/* Header */
+.header {
+    background: #fffcf4;
+}
+
+.header.fixed {
+    position: sticky;
+    top: -28px;
+    padding: 36px 0 8px;
+    z-index: 1;
+}
+
+.header .body {
+    display: flex;
+    align-items: center;
+}
+
+.header .nav {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav a {
+    position: relative;
+    padding: 8px 21px;
+    color: #5f5b53;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.nav li.active a,
+.nav a:hover {
+    text-shadow: 1px 0 0 currentColor;
+    color: #171100;
+}
+
+.nav li.active a::after {
+    position: absolute;
+    bottom: 6px;
+    left: 21px;
+    content: "";
+    width: 21px;
+    height: 2px;
+    border-radius: 1px;
+    background: #171100;
+}
+
+.header .sign-up-btn {
+    min-width: 144px;
+    margin-left: 49px;
+}
+
+/* ===== Hero ===== */
+.hero {
+    padding: 56px 0 65px;
+    background: #fffcf4;
+}
+
+.hero .body {
+    display: flex;
+}
+
+.media-block {
+    position: relative;
+    width: 48%;
+}
+
+.media-block .image {
+    width: 470px;
+    height: 685px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.hero-summary {
+    position: absolute;
+    right: 0;
+    bottom: 48px;
+    width: 270px;
+    padding: 24px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+
+.hero-summary .item {
+    display: flex;
+    align-items: center;
+    margin-top: 14px;
+}
+
+.hero-summary .item:first-child {
+    margin-top: 0;
+}
+
+.hero-summary .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.hero-summary .item:nth-child(1) .icon {
+    background-color: #fff9e8;
+}
+
+.hero-summary .item:nth-child(2) .icon {
+    background-color: #fcefff;
+}
+
+.hero-summary .item:nth-child(3) .icon {
+    background-color: #ebeaff;
+}
+
+.hero-summary .info {
+    margin-left: 16px;
+}
+
+.hero-summary .label {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+.hero-summary .title {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.content-block {
+    width: 52%;
+    padding-top: 64px;
+    padding-left: 130px;
+}
+
+.hero .heading {
+    color: #171100;
+    font-family: var(--heading-font);
+    font-size: 58px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 68px; /* 117.241% */
+    letter-spacing: -1.16px;
+}
+
+.hero .desc {
+    margin-top: 22px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.67;
+}
+
+.hero .cta-group {
+    display: flex;
+    align-items: center;
+    margin-top: 38px;
+    margin-bottom: 48px;
+}
+
+.hero .hero-cta {
+    min-width: 180px;
+    line-height: 64px;
+    background-color: var(--primary-color);
+}
+
+.hero .watch-video {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-left: 28px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.hero .watch-video .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+
+.hero .watch-video span {
+    margin-left: 14px;
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.hero .stats {
+    margin-left: -28px;
+    margin-top: 8px;
+}
+
+.hero .stats strong {
+    margin-left: 28px;
+    margin-right: 14px;
+    color: #171100;
+    font-family: var(--heading-font);
+    font-size: 4.4rem;
+    font-weight: 700;
+    line-height: 1.22
+}
+
+/* Popular */
