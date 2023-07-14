@@ -28,6 +28,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    cursor: pointer;
+}
+
 .btn {
     display: inline-block;
     min-width: 118px;
@@ -227,7 +231,6 @@ a {
     margin-left: 28px;
     border: none;
     background-color: transparent;
-    cursor: pointer;
 }
 
 .hero .watch-video .icon {
@@ -260,7 +263,128 @@ a {
     font-family: var(--heading-font);
     font-size: 4.4rem;
     font-weight: 700;
-    line-height: 1.22
+    line-height: 1.22;
 }
 
 /* Popular */
+.popular {
+    padding: 200px 0;
+    background-color: #fff;
+}
+
+.popular-header {
+    position: relative;
+}
+
+.popular-header .sub-title {
+    color: #171100;
+    font-family: var(--heading-font);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26;
+    letter-spacing: -0.76px;
+}
+
+.popular-header .desc {
+    width: 39%;
+    margin-top: 16px;
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66;
+}
+
+.popular-header .btn-group {
+    display: flex;
+    gap: 18px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.popular-header .arrow-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--primary-color);
+    border-radius: 999px;
+    background-color: #fff;
+}
+
+.popular-header .arrow-btn.arrow-btn-primary {
+    border: none;
+    background-color: var(--primary-color);
+}
+
+.popular-header .arrow-btn.arrow-btn-primary:hover {
+    opacity: 0.9;
+}
+
+.popular .courses {
+    display: flex;
+    gap: 30px;
+    margin-top: 55px;
+}
+
+.popular .course-item {
+    border-radius: 12px;
+    overflow: hidden;
+    outline: 1px solid #E2DFDA;
+}
+
+.popular .course-item:hover {
+    outline: none;
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+}
+
+.course-item .img {
+    width: 100%;
+    height: 278px;
+    object-fit: cover;
+}
+
+.course-item .content {
+    padding: 16px 22px 22px;
+}
+
+.course-item .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-item .title {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.67;
+}
+
+.course-item .rate {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #FEA31B;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.course-item .desc {
+    margin-top: 6px;
+    margin-bottom: 12px;
+    color: #5F5B53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; 
+}
+
+.course-item .price {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
