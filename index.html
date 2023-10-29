@@ -19,7 +19,7 @@
         <!-- Styles -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
     </head>
-    <body style="height: 20000px">
+    <body>
         <!-- Header -->
         <header class="header fixed">
             <div class="main-content">
@@ -107,7 +107,7 @@
 
                         <!-- Content block -->
                         <div class="content-block">
-                            <h1 class="heading">
+                            <h1 class="heading lv1">
                                 Learn without limits and spread knowledge.
                             </h1>
                             <p class="desc">
@@ -147,14 +147,20 @@
                 <div class="main-content">
                     <!-- Header -->
                     <div class="popular-header">
-                        <h2 class="sub-title">Our popular courses</h2>
-                        <p class="desc">Build new skills with new trendy courses and shine for the next future career.</p>
+                        <div>
+                            <h2 class="heading lv2">Our popular courses</h2>
+                            <p class="desc">Build new skills with new trendy courses and shine for the next future career.</p>
+                        </div>
                         <div class="btn-group">
                             <button class="arrow-btn">
-                                <img src="./assets/icons/left-arrow-primary.svg" alt="">
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 1L1 7L7 13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                             </button>
-                            <button class="arrow-btn arrow-btn-primary">
-                                <img src="./assets/icons/right-arrow-white.svg" alt="">
+                            <button class="arrow-btn">
+                                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L7 7L1 13" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
                             </button>
                         </div>
                     </div>
@@ -176,7 +182,7 @@
                                 <p class="desc">Get the best course, gain knowledge and shine for your future career.</p>
                                 <div class="row">
                                     <strong class="price">$120.75</strong>
-                                    <a href="" class="btn btn-primary">Book Now</a>
+                                    <a href="#!" class="btn popular-cta">Book Now</a>
                                 </div>
                             </div>
                             </li>
@@ -196,7 +202,7 @@
                                 <p class="desc">Get the best course, gain knowledge and shine for your future career.</p>
                                 <div class="row">
                                     <strong class="price">$120.75</strong>
-                                    <a href="" class="btn">Book Now</a>
+                                    <a href="#!" class="btn popular-cta">Book Now</a>
                                 </div>
                             </div>
                         </li>
@@ -215,16 +221,155 @@
                                 <p class="desc">Get the best course, gain knowledge and shine for your future career.</p>
                                 <div class="row">
                                     <strong class="price">$120.75</strong>
-                                    <a href="" class="btn">Book Now</a>
+                                    <a href="#!" class="btn popular-cta">Book Now</a>
                                 </div>
                             </div>
                         </li>
                     </ul>
-
                 </div>
             </div>
 
+            <!-- Testimonial -->
+            <div class="testimonial">
+                <div class="main-content">
+                    <div class="body">
+                        <div class="testimonial-info">
+                            <img src="./assets/img/avatar.jpg" alt="avatar" class="avatar">
+                            <p class="name">Peter Moor</p>
+                            <p class="career">Student of Web Design</p>
+                            <div class="dot-group">
+                                <div class="dot"></div>
+                                <div class="dot dot-primary"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                        <p class="testimonial-quote">
+                            <img src="./assets/icons/quotes.svg" alt="" class="icon">
+                            Not only does my resume look impressive—filled with the names and logos of world-class institutions—but these certificates also bring me closer to my career goals by validating the skills I've learned."
+                        </p>
 
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features -->
+            <div class="features">
+                <div class="main-content">
+                    <div class="row">
+                        <div class="left feature-images">
+                            <img src="./assets/img/feature-img-1.jpg" alt="Learner outcomes through our awesome platform">
+                            <img src="./assets/img/feature-img-2.jpg" alt="Learner outcomes through our awesome platform">
+                        </div>
+                        <div class="right feature-content">
+                            <h3 class="heading">Learner outcomes through our awesome platform</h3>
+                            <p class="desc">87% of people learning for professional development report career benefits like getting a promotion, a raise, or starting a new career.</p>
+                            <p class="desc">Lesson Impact Report (2022)</p>
+                            <a href="#!" class="btn btn-primary feature-cta">Sign Up</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="left feature-content">
+                            <h3 class="heading">Take the next step toward your personal and professional goals with Lesson.</h3>
+                            <p class="desc">Take the next step toward. Join now to receive personalized  and more recommendations from the full Coursera catalog.</p>
+                            <a href="#!" class="btn btn-primary feature-cta">Join Now</a>
+                        </div>
+                        <div class="right  feature-images">
+                            <img src="./assets/img/feature-img-2.jpg" alt="Learner outcomes through our awesome platform">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blogs -->
+            <div class="blogs">
+                <div class="main-content">
+                    <h2 class="heading">Our blog</h2>
+                    <p class="desc">Read our regular travel blog and know the latest update of tour and travel</p>
+                    <ul class="blog-list">
+                        <li class="item">
+                            <img src="./assets/img/blog-img-1.jpg" alt="How to become a pro web designer in 2022 and get remot job?" class="image">
+                            <div class="content">
+                                <p class="date">21 November 2021</p>
+                                <div class="spacing"></div>
+                                <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                                <a href="#!" class="btn blog-cta">Read More</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <img src="./assets/img/blog-img-2.jpg" alt="How to become a pro web designer in 2022 and get remot job?" class="image">
+                            <div class="content">
+                                <p class="date">21 November 2021</p>
+                                <div class="spacing"></div>
+                                <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                                <a href="#!" class="btn blog-cta">Read More</a>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <img src="./assets/img/blog-img-3.jpg" alt="How to become a pro web designer in 2022 and get remot job?" class="image">
+                            <div class="content">
+                                <p class="date">21 November 2021</p>
+                                <div class="spacing"></div>
+                                <h3 class="title">How to become a pro web designer in 2022 and get remot job?</h3>
+                                <a href="#!" class="btn blog-cta">Read More</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="dot-group">
+                        <div class="dot"></div>
+                        <div class="dot dot-primary"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div>
         </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="main-content">
+                <ul class="row">
+                    <li class="column">
+                        <img src="./assets/img/bright-logo.svg" alt="Lession.">
+                        <p class="desc">Need to help for your dream Career? trust us. With Lesson, study becomes a lot easier with us.</p>
+                        <div class="social-media">
+                            <img src="./assets/icons/twitter.svg" alt="">
+                            <img src="./assets/icons/facebook.svg" alt="">
+                            <img src="./assets/icons/linkedin.svg" alt="">
+                            <img src="./assets/icons/instagram.svg" alt="">
+                        </div>
+                    </li>
+                    <li class="column">
+                        <h3 class="heading">Company</h3>
+                            <div class="spacing"></div>
+                            <ul class="list">
+                                <li class="item">About Us</li>
+                                <li class="item">Features</li>
+                                <li class="item">Our Pricing</li>
+                                <li class="item">Latest News</li>
+                            </ul>
+                    </li>
+                    <li class="column">
+                        <h3 class="heading">Support</h3>
+                            <div class="spacing"></div>
+                            <ul class="list">
+                                <li class="item">FAQ’s</li>
+                                <li class="item">Terms & Conditions</li>
+                                <li class="item">Privacy Policy</li>
+                                <li class="item">Contact Us</li>
+                            </ul>
+                    </li>
+                    <li class="column">
+                        <h3 class="heading">Address</h3>
+                            <div class="spacing"></div>
+                            <ul class="list">
+                                <li class="item contact"><strong>Location:</strong> 27 Division St, New York, NY 10002, USA</li>
+                                <li class="item contact"><strong>Email:</strong> email@gmail.com</li>
+                                <li class="item contact"><strong>Phone:</strong> + 000 1234 567 890</li>
+                            </ul>
+                    </li>
+                </ul>
+                <div class="long-spacing"></div>
+                <p class="copyright">Copyright ©2022 webdesign.gdn All rights reserved</p>
+            </div>
+        </footer>
     </body>
 </html>
