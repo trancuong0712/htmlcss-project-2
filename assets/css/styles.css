@@ -43,7 +43,7 @@ button {
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 50px;
-    border: none
+    border: none;
 }
 
 .btn:hover {
@@ -70,6 +70,21 @@ button {
 
 .dot.dot-primary {
     background-color: var(--primary-color);
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-2 {
+    --line-clamp: 2;
+}
+
+.break-all {
+    word-break: break-all;
 }
 
 .heading {
@@ -373,8 +388,8 @@ button {
     align-items: center;
 }
 
-
 .course-item .title a {
+    padding-right: 6px;
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
@@ -403,6 +418,7 @@ button {
 }
 
 .course-item .price {
+    padding-right: 6px;
     color: #171100;
     font-size: 1.8rem;
     font-weight: 600;
