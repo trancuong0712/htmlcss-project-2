@@ -70,6 +70,7 @@ button {
 
 .dot.dot-primary {
     background-color: var(--primary-color);
+    cursor: default;
 }
 
 .line-clamp {
@@ -437,19 +438,16 @@ button {
 /* Testimonial */
 .testimonial {
     background: #2e2100;
-}
-
-.testimonial .body {
-    display: flex;
     padding: 96px 0;
 }
 
-.testimonial-info {
-    width: 37%;
+.testimonial-item {
+    display: flex;
 }
 
-.testimonial-quote {
-    width: 63%;
+.testimonial-content {
+    width: 66%;
+    margin-left: auto;
 }
 
 .testimonial-info .avatar {
@@ -484,21 +482,13 @@ button {
     cursor: pointer;
 }
 
-.testimonial-quote {
-    position: relative;
-    margin-top: 24px;
+.testimonial-content blockquote {
     color: #fff;
     font-size: 2.6rem;
     font-style: italic;
     font-weight: 400;
     line-height: 1.53;
-}
-
-.testimonial-quote .icon {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-100%, -100%);
+    margin-left: 30px;
 }
 
 /* Features */
