@@ -441,8 +441,15 @@ button {
     padding: 96px 0;
 }
 
+.testimonial-list {
+    display: flex;
+    overflow: hidden;
+}
+
 .testimonial-item {
     display: flex;
+    flex-shrink: 0;
+    width: 100%;
 }
 
 .testimonial-content {
