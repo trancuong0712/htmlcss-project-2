@@ -500,26 +500,29 @@ button {
 
 /* Features */
 .features {
+    margin: 135px 0;
+    padding: 65px 0;
     background-color: #ffffff;
 }
 
 .features .row {
     display: flex;
-    margin: 200px 0;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
 }
 
-.features .left {
-    width: 48%;
+.features .row:first-child {
+    margin-top: 0;
 }
 
 .feature-images {
-    height: 438px;
     display: flex;
-    gap: 30px;
+    gap: 0 30px;
 }
 
 .feature-images img {
-    flex: 1;
+    width: 270px;
     height: 404px;
     object-fit: cover;
     border-radius: 16px;
@@ -527,30 +530,17 @@ button {
 }
 
 .feature-images img:first-child {
-    align-self: flex-end;
+    margin-top: 34px;
 }
 
 .feature-images img:only-child {
-    align-self: unset;
+    width: 470px;
     height: 440px;
-}
-
-.features .right {
-    width: 52%;
-    padding-left: 130px;
+    margin-top: 0;
 }
 
 .feature-content {
-    padding-top: 58px;
-}
-
-.feature-content .heading {
-    color: #171100;
-    font-family: var(--heading-font);
-    font-size: 3.8rem;
-    font-weight: 700;
-    line-height: 1.26;
-    letter-spacing: -0.76px;
+    width: 41%;
 }
 
 .feature-content .desc {
@@ -563,6 +553,16 @@ button {
     margin-top: 32px;
     min-width: 137px;
 }
+
+.features .row:nth-child(2) {
+    flex-direction: row-reverse;
+}
+
+.features .row:nth-child(2) .feature-content {
+    width: 49%;
+}
+
+
 
 /* Blogs */
 .blogs {
